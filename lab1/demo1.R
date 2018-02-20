@@ -90,10 +90,7 @@ match.plink <- function(plink.ref, plink.other) {
     return(list(ref = ret.ref, other = ret.other))
 }
 
-rm.na.zero <- function(mat) {
-    mat[is.na(mat)] <- 0
-    return(mat)
-}
+rm.na.zero <- function(mat) replace(mat, is.na(mat), 0)
 
 fast.cov <- function(x, y) {
     n.obs <- crossprod(!is.na(x), !is.na(y))
