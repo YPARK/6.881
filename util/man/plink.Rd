@@ -17,7 +17,7 @@ read.plink(bed.header)
 \references{
 }
 \examples{
-plink = read.plink('../inst/extdata/toy')
+yesplink = read.plink('../inst/extdata/toy')
 }
 \author{Yongjin Park}
 

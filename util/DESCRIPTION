@@ -8,4 +8,4 @@ Maintainer: Yongjin Park <ypp@csail.mit.edu>
 Description: Helper functions for 6.881
 License: MIT License
 Imports: Rcpp (>= 0.12.6), RcppProgress (>= 0.2.1)
-LinkingTo: Rcpp, RcppEigen, RcppProgress
+LinkingTo: Rcpp, RcppProgress
