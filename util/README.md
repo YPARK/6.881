@@ -5,14 +5,16 @@
 First install packages needed, `devtools`, `Rcpp`, `RcppProgress`
 
 ```
-install.packages('devtools')
-install.packages('Rcpp')
-install.packages('RcppProgress')
+> install.packages('devtools')
+> install.packages('git2r')
+> install.packages('Rcpp')
+> install.packages('RcppProgress')
 ```
 
 Then install this package
 ```
 > library(devtools)
+> library(git2r)
 > devtools::install_github('YPARK/6.881/util')
 ```
 
@@ -25,7 +27,7 @@ Just do this in `R`
 
 ## Installation (optional)
 
-Prerequisite: `Rcpp`, `RcppEigen`, `RcppProgress` packages
+Prerequisite: `Rcpp`, `RcppProgress` packages
 
 Make sure your R development environment support `C++14` by including
 `-std=c++14` to `CFLAGS` and `CXXFLAGS` in `~/.R/Makevars` file.
@@ -52,4 +54,13 @@ R:
 # Bug reports
 
 Yongjin Park `ypp@csail.mit.edu`
+
+# Trouble shooting
+
+## No such file or directory
+
+Make sure you include directories for required header files in `-I`
+flag by modifying your `~/.R/Makevars`
+For instance you can add 
+
 
