@@ -1,0 +1,11 @@
+Package: util6881
+Type: Package
+Title: Helper functions for 6.881
+Version: 1.0.0
+Date: 2018-02-21
+Author: Yongjin Park
+Maintainer: Yongjin Park <ypp@csail.mit.edu>
+Description: Helper functions for 6.881
+License: MIT License
+Imports: Rcpp (>= 0.12.6), RcppEigen (>= 0.3.2.9.0), RcppProgress (>= 0.2.1)
+LinkingTo: Rcpp, RcppEigen, RcppProgress
