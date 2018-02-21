@@ -1,6 +1,22 @@
 # Helper functions for 6.881 lab
 
-## Installation (a simple version)
+## Installation using `devtools`
+
+First install packages needed, `devtools`, `Rcpp`, `RcppProgress`
+
+```
+install.packages('devtools')
+install.packages('Rcpp')
+install.packages('RcppProgress')
+```
+
+Then install this package
+```
+> library(devtools)
+> devtools::install_github('YPARK/6.881/util')
+```
+
+## Installation from local repository (a simple version)
 
 Just do this in `R`
 ```

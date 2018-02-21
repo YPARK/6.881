@@ -12,7 +12,6 @@
 std::string curr_time();
 
 #include <Rcpp.h>
-#include <RcppEigen.h>
 
 #define TLOG(msg) \
   { Rcpp::Rcerr << "[" << curr_time() << "] " << msg << std::endl; }
