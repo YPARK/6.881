@@ -53,14 +53,4 @@ R:
 
 # Bug reports
 
-Yongjin Park `ypp@csail.mit.edu`
-
-# Trouble shooting
-
-## No such file or directory
-
-Make sure you include directories for required header files in `-I`
-flag by modifying your `~/.R/Makevars`
-For instance you can add 
-
-
+Yongjin Park `ypp@csail.mit.edu` or leave your messages in the "Issues"
