@@ -6,7 +6,7 @@
 ##
 
 library(dplyr)
-library(zqtl)
+library(util6881)
 library(readr)
 library(Matrix)
 
@@ -22,6 +22,8 @@ eur.ld.tab <- take.ld.file('EUR', chr = .chr) %>% read_tsv()
 eas.plink <- '1KG_phase3/eas/chr' %&&% .chr %>% read.plink()
 eur.plink <- '1KG_phase3/eur/chr' %&&% .chr %>% read.plink()
 
+################################################################
+## Take a subset of SNPs
 subset.plink <- function(.plink, ld.start, ld.stop) {
     .idx <- which(.plink$BIM[, 4] >= ld.start & .plink$BIM[, 4] <= ld.stop)
     ret <- .plink
@@ -31,7 +33,8 @@ subset.plink <- function(.plink, ld.start, ld.stop) {
     return(ret)
 }
 
-## match evething to plink.ref
+################################################################
+## match plink.other to plink.ref
 match.plink <- function(plink.ref, plink.other) {
 
     if(is.null(plink.ref)) return(NULL)
