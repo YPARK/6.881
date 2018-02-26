@@ -188,12 +188,11 @@ If you are not sure, you can quickly review (or learn)
 ```
 ################################################################
 ## Calculation of SNP-by-SNP QTL statistics
-
+##
 ## convert z-score to p-values (two-sided test)
 zscore.pvalue <- function(z) {
     2 * pnorm(abs(z), lower.tail = FALSE)
 }
-
 ## calculate univariate effect sizes and p-values
 calc.qtl.stat <- function(xx, yy) {
 
@@ -220,42 +219,17 @@ calc.qtl.stat <- function(xx, yy) {
         resid.se.mat[, k] <- se.k
     }
 
-    ## organize as consolidated table
-    y.cols <- 1:ncol(yy)
-    colnames(beta.mat) <- y.cols
-    colnames(n.obs) <- y.cols
-    colnames(resid.se.mat) <- y.cols
-
-    beta.tab <- beta.mat %>%
-        as.data.frame() %>%
-            dplyr::mutate(x.col = 1:n()) %>%
-                tidyr::gather(key = 'y.col', value = 'beta', y.cols)
-    
-    resid.se.tab <- resid.se.mat %>%
-        as.data.frame() %>%
-            dplyr::mutate(x.col = 1:n()) %>%
-                tidyr::gather(key = 'y.col', value = 'resid.se', y.cols)
-    
-    nobs.tab <- n.obs %>%
-        as.data.frame() %>%
-            dplyr::mutate(x.col = 1:n()) %>%
-                tidyr::gather(key = 'y.col', value = 'n', y.cols)
-    
-    out.tab <- beta.tab %>%
-        left_join(nobs.tab) %>%
-            left_join(resid.se.tab) %>%
-                dplyr::mutate(se = resid.se/sqrt(n)) %>%
-                    dplyr::mutate(p.val = zscore.pvalue(beta/se))
-    
-    return(out.tab)
+    (...)
 }
 ```
 
-### Visualization
+### Visualization 1 : Manhattan plot
 
 Often, GWAS results are presented as so called "Manhattan plot":
 
 ![](figure_lab2_manhattan.png)
+
+### Visualization 2 : QQ plot
 
 Also, it is useful to visualize the results as a quantile-quantile
 plot, checking that most of SNPs are described by the null hypothesis
