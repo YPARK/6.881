@@ -28,6 +28,6 @@ Labs for [6.881](http://compbio.mit.edu/6.881)
 
 The purpose of the lab is not to grade you, but to help you learn
 basic concepts and practical skills.  Having said that, we promise
-grades will be given generously as long as we see we feel you
-understood 100% materials and you made best possible efforts.
+grades will be given generously as long as we feel you understood 100%
+of the materials, and you made best possible efforts.
 
