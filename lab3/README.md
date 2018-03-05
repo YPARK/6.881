@@ -1,4 +1,8 @@
-Data and sample codes can be found in [https://github.com/YPARK/6.881/tree/master/lab3](https://github.com/YPARK/6.881/tree/master/lab3)
+* Data and sample codes can be found in [https://github.com/YPARK/6.881/tree/master/lab3](https://github.com/YPARK/6.881/tree/master/lab3)
+
+* Submit your report to the stellar [http://stellar.mit.edu/S/course/6/sp18/6.881/](http://stellar.mit.edu/S/course/6/sp18/6.881/)
+
+---
 
 # Option 1: Exploration of ExAC data
 
