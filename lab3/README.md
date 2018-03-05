@@ -1,3 +1,5 @@
+Data and sample codes can be found in [https://github.com/YPARK/6.881/tree/master/lab3](https://github.com/YPARK/6.881/tree/master/lab3)
+
 # Option 1: Exploration of ExAC data
 
 First of all, you are welcomed to work on the previous year's lab.  See [`Lab3-2016.pdf`](Lab3-2016.pdf) (courtesy of Yaping Liu).  You will find assignment in there.
