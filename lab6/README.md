@@ -137,10 +137,10 @@ use.
 
 ## (Optional) Multiple instrumental variable
 
-So far, we only considered a single SNP as a genetic IV, but we can
-aggregate information across multiple genetic IVs.  This is currently
-actively developing research topic.  There is a convenient [MR
-package](https://cran.r-project.org/web/packages/MendelianRandomization/index.html)
+So far, we have only considered a single SNP as a genetic IV, but we
+can aggregate information across multiple genetic IVs.  This is
+currently actively developing research topic.  There is a convenient
+[MR_package](https://cran.r-project.org/web/packages/MendelianRandomization/index.html)
 for multiple SNP analysis.  If you were interested, you can simulate
 data with a multivariate genetic model and estimate mediation effect
 sizes using this package.
