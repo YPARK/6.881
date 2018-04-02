@@ -6,11 +6,11 @@ Labs for [6.881](http://compbio.mit.edu/6.881)
 
 * Lab 2: Association – GWAS on simulated phenotypes (plink2)
 
-* Lab 3: Coding – interpretation of rare coding variants using ExAC
+* Lab 3: Coding – rare variant association
 
-* Lab 4: Non-coding – enrichment of epigenomic annotations
+* Lab 4: Non-coding – enrichment of epigenomic annotations (use the previous year's lab)
 
-* Lab 5: Fine-mapping – Run fine-mapping methods on GWAS stats
+* Lab 5: Fine-mapping – Run fine-mapping methods on GWAS stats (use the previous year's lab)
 
 * Lab 6: Intermediate – confounder correction & imputed association or Mendelian randomization
 
