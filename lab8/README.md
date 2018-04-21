@@ -1,3 +1,5 @@
+See `https://github.com/YPARK/6.881/tree/master/lab8`
+
 # Identification of population structure in genotype matrix
 
 This lab is built on the class materials prepared by Prof. John
